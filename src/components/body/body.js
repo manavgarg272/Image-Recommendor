@@ -12,7 +12,6 @@ const GiftHome = () => {
   return (
     <Fragment style={{ color: "black", backgroundImage: 'url(' + img1 + ')', backgroundSize: 'auto' }}>
 
-
       <Row style={{ marginTop: "1%" }}>
         <a style={{ marginLeft: "16%", fontSize: "60px", color: "white", fontFamily: "Caveat" }}>SIMILAR IMAGE RECOMMENDER WEBSITE  </a>
       </Row>
