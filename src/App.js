@@ -5,8 +5,6 @@ function App() {
   return (
     
     <Fragment>
-      <img src = {img1} style={{width:"100%",position:"absolute",top:"0px",zIndex:"-1"}} />
-      <img src = {img1}  style={{width:"100%",position:"absolute",top:"700px",zIndex:"-1"}}/>
       <Body id="bodytest" />
     </Fragment>
   );

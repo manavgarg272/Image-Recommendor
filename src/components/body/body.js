@@ -13,7 +13,7 @@ const GiftHome = () => {
     <Fragment style={{ color: "black", backgroundImage: 'url(' + img1 + ')', backgroundSize: 'auto' }}>
 
       <Row style={{ marginTop: "1%" }}>
-        <a style={{ marginLeft: "16%", fontSize: "60px", color: "white", fontFamily: "Caveat" }}>SIMILAR IMAGE RECOMMENDER WEBSITE  </a>
+        <a style={{ marginLeft: "16%", fontSize: "60px", color: "Black",fontWeight:"Bold" }}>Similar Image Recommendor Website  </a>
       </Row>
 
       <Row style={{ width: "46%", marginLeft: "25%" }} >
@@ -21,7 +21,7 @@ const GiftHome = () => {
       </Row>
 
       <Row style={{ marginTop: "1%" }}>
-        <a style={{ marginLeft: "23%", fontSize: "60px", color: "white", fontFamily: "Caveat" }}>SIMILAR IMAGES RECOMMENDED </a>
+        <a style={{ marginLeft: "23%", fontSize: "60px", color: "Black",fontWeight:"Bold" }}>Siimilar Images Recommended </a>
       </Row>
 
       <Row style={{ width: "90%", marginLeft: "5%", marginTop: "2%" }} >
