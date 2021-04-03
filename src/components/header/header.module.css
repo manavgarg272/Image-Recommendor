@@ -1,0 +1,24 @@
+.Line{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 1%;
+}
+.DropDown a{
+    color: black;
+}
+.Color{
+    color:orange
+}
+.H2{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.TopHeader{
+    display: block;
+} 
+@media (max-width:1200px){
+    .TopHeader{
+        display: none;
+    } 
+}
