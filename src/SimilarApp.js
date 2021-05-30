@@ -16,6 +16,22 @@ function SimilarApp() {
       }
     };
     reader.readAsDataURL(e.target.files[0]);
+    var formdata = new FormData();
+    formdata.append("img", e.target.files[0]);
+    console.log(formdata);
+
+    var requestOptions = {
+      mode: "no-cors",
+      method: "POST",
+      body: formdata,
+      redirect: "follow",
+      dataType: "jsonp",
+    };
+
+    fetch("http://127.0.0.1:5000/", requestOptions)
+      .then((response) => response.json())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
   };
 
   return (
