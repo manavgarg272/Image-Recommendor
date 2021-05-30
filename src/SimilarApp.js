@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SimilarApp.css";
-import { Button } from "@material-ui/core";
+import { Button, AppBar, Toolbar, Typography } from "@material-ui/core";
 import url from "./BackgroundImage/freeimg_89251639freejpg850.jpg";
 import { Fragment } from "react";
 
@@ -20,19 +20,19 @@ function SimilarApp() {
 
   return (
     <Fragment>
-      <div className="SimilarApp_header">
-        <div className="SimilarApp_header_text">
-          <h1>MAJOR PROJECT IT EVENING</h1>
-        </div>
+      <div className="SimilarApp_appbar">
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="h6">SIMILAR IMAGE RECOMMENDER</Typography>
+          </Toolbar>
+        </AppBar>
       </div>
 
       <div className="SimilarApp">
-        <div className="SimilarApp_text">
-          <h1>Simlar Images Recommender Website</h1>
-        </div>
         <div className="SimilarApp_image">
           <img src={profileImg} alt="" />
         </div>
+
         <div className="SimilarApp_button">
           <input
             accept="image/*"
@@ -48,6 +48,7 @@ function SimilarApp() {
             </Button>
           </label>
         </div>
+
         <div className="SimilarApp_recommend_image">
           <Link to={"/ImagesRecommended"}>
             <Button variant="contained" color="secondary">
