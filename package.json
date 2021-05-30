@@ -12,6 +12,7 @@
     "bootstrap": "^4.6.0",
     "firebase": "^8.3.0",
     "formdata": "^0.10.4",
+    "fs": "0.0.1-security",
     "material-ui-dropzone": "^3.5.0",
     "mdb-ui-kit": "^3.3.0",
     "mdbootstrap": "^4.19.2",

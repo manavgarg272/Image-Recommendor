@@ -7,7 +7,35 @@ import { Button, AppBar, Toolbar, Typography } from "@material-ui/core";
 
 import Data from "./data.json";
 import { Fragment } from "react";
+import fs from "fs";
+// import img from "./images/1865b907-c727-45f4-8130-3c96d0fd09bd";
+// const fs = require("fs");
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+// function myImages(r) {
+//   // const xyz = "./images/" + r;
+//   // console.log(typeof xyz );
+//   const images = importAll(
+//     require.context("./images/" + r, false, /\.(png|jpe?g|svg)$/)
+//   );
+
+//   console.log(images);
+// }
+
 function ImagesRecommended() {
+  var url = "";
+
+  const myImages = (r) => {
+    const images = importAll(
+      require.context("./images/" + r, false, /\.(png|jpe?g|svg)$/)
+    );
+
+    console.log(images);
+  };
+
   return (
     <Fragment>
       <div className="ImagesRecommended">
@@ -25,7 +53,8 @@ function ImagesRecommended() {
             {Object.keys(Data).map((keyName, i) => (
               <Col>
                 <Card>
-                  {console.log(keyName)}
+                  {myImages(keyName)}
+
                   <Card.Img
                     variant="top"
                     src={url}
@@ -48,3 +77,6 @@ function ImagesRecommended() {
   );
 }
 export default ImagesRecommended;
+
+// 'C:/Users/Manavgarg/Desktop/images/ '+ {keyName} +
+// {require('/images/' + {keyName} + )}

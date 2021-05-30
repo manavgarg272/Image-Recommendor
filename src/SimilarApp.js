@@ -6,6 +6,7 @@ import url from "./BackgroundImage/freeimg_89251639freejpg850.jpg";
 import { Fragment } from "react";
 
 function SimilarApp() {
+  console.log(url);
   const [profileImg, setprofileImg] = useState(url);
 
   const imageHandler = (e) => {
